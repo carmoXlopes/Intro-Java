@@ -11,8 +11,14 @@ public class Medidas {
     //funções faz e retorna
     //primeira função tem o nome determinada (funçao estatica)
     //main é o principal = fio da meada que vai chamar as outras estruturas
-    //toda primeira função se chama Main
+    //toda primeira função se chama Main[
+    //todas funções que o main vai chamar temos que usar static
     public static void main (String []args){
+    calcularAreaCurto();
+    calcularAreaModoExtenso();
+
+    }
+    public  void calcularAreaModoCondensado(){
         System.out.println("Bom dia!");
         System.out.println("calculo de Areas");
 
@@ -22,9 +28,9 @@ public class Medidas {
 
         System.out.println("Para a Largura de " + largura + " e o comprimento de " + comprimento +
                 " A area do tapete é de: " + largura*comprimento + " m² ");
-
     }
-    public void calcularAreaModoExtenso(){
+
+    public static void calcularAreaModoExtenso(){
         int largura;
         int comprimento;
         int resultado;
@@ -36,7 +42,7 @@ public class Medidas {
         System.out.println("Para a Largura de " + largura + " e o comprimento de " + comprimento +
                 " A area do tapete é de: " + resultado + " m² ");
     }
-    public void calcularArea(){
+    public static void calcularAreaCurto(){
         int largura = 5;
         int comprimento = 10;
 
