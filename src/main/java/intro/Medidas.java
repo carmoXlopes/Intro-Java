@@ -13,7 +13,9 @@ public class Medidas {
     //main é o principal = fio da meada que vai chamar as outras estruturas
     //toda primeira função se chama Main
     public static void main (String []args){
+        System.out.println("Bom dia!");
         System.out.println("calculo de Areas");
+
 
         int largura = 5;
         int comprimento = 10;
